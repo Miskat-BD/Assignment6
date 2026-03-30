@@ -4,7 +4,7 @@ const StatsSection = () => {
     return (
         
             <section className='bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>
-                <div className="max-w-5xl py-14 mx-auto flex items-center justify-between">
+                <div className="max-sm:px-7 sm:max-w-5xl py-10 mx-auto flex items-center justify-between">
                     <div className="text-center">
                         <h1 className='text-3xl md:text-6xl font-extrabold  text-white '>50K+</h1>
                         <p className='text-white font-medium mt-4'>Active Users</p>

@@ -4,8 +4,8 @@ import { FiShoppingCart } from 'react-icons/fi';
 
 const Navbar = () => {
     return (
-        <>
-            <div className="container mx-auto max-sm:hidden">
+        <div className='sticky top-0 z-10 bg-white'>
+            <div className="container mx-auto max-sm:hidden ">
 
                 <div className=' md:flex justify-between py-4 items-center'>
                     <div className="">
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </div>
             </div>
             <hr className='border-t-2 border-gray-300'></hr>
-        </>
+        </div>
     );
 };
 
