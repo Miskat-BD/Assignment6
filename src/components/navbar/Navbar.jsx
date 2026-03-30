@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiCart } from 'react-icons/bi';
 import { FiShoppingCart } from 'react-icons/fi';
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
                             <FiShoppingCart />
                         </div>
                         <h3>Login</h3>
-                        <button className='btn bg-linear-to-l rounded-full from-[#9514FA] to-[#4F39F6] '>Get Started</button>
+                        <button className='text-white btn bg-linear-to-l rounded-full from-[#9514FA] to-[#4F39F6] '>Get Started</button>
                     </div>
                 </div>
             </div>
@@ -39,7 +40,7 @@ const Navbar = () => {
                             </div>
                             <ul
                                 tabIndex="-1"
-                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow cursor-pointer font-semibold">
                                 <li>Products</li>
                                 <li>Features</li>
                                 <li>Pricing</li>
@@ -53,11 +54,10 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="flex text-center justify-end md:flex gap-5 items-center font-semibold">
-                    <div className="">
-                        <FiShoppingCart />
-                    </div>
-                    <h3>Login</h3>
-                    <button className='btn bg-linear-to-l rounded-full from-[#9514FA] to-[#4F39F6] '>Get Started</button>
+                    <FiShoppingCart></FiShoppingCart>
+                    <h3 className='text-[12px]'>Login</h3>
+                    <button className='btn bg-linear-to-l rounded-full from-[#9514FA]
+                     to-[#4F39F6] text-[12px] text-white'>Get Started</button>
                 </div>
             </div>
             <hr className='border-t-2 border-gray-300'></hr>
