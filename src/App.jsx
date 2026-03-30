@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './components/banner/Banner'
+import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Pricing from './components/PricingSection/Pricing'
 import StatsSection from './components/Stat/StatsSection'
@@ -16,6 +17,7 @@ function App() {
       <Steps/>
       <Pricing/>
       <Workflow/>
+      <Footer/>
     </>
   )
 }

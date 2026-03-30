@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='py-7 my-5 container mx-auto pl-4'>
+        <div className='py-12 my-5 container mx-auto pl-4'>
             <h1 className='text-2xl md:text-5xl font-extrabold text-center'>Simple, Transparent Pricing</h1>
             <p className='text-[#627382] mt-3.5 mb-9 text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className="grid grid-cols-1 md:grid-cols-3">
@@ -36,7 +36,8 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-linear-to-r from-[#4F39F6] to-[#9514FA] max-md:my-4 shadow-sm">
+                <div className="card indicator w-96 bg-linear-to-r from-[#4F39F6] to-[#9514FA] max-md:my-6 shadow-sm">
+                        <span className="indicator-item indicator-center badge badge-warning text-[14px] font-medium">Most Popular</span>
                     <div className="card-body">
                         <div className="text-white">
                             <h2 className="text-2xl font-bold ">Pro</h2>
