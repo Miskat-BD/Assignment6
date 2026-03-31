@@ -32,9 +32,9 @@ const Cart = ({ cart, setCart }) => {
             </div>
             <div className={cart.length !== 0 ? 'hidden' : null}>
                 <div className="flex justify-center pt-2">
-                    <IoCartOutline className='w-24 h-24 '/>
+                    <IoCartOutline className='w-24 h-24 text-gray-500'/>
                 </div>
-                <h1 className='text-center p-10'>Your Cart is Empty</h1>
+                <h1 className='text-center p-10 text-gray-400'>Your Cart is Empty</h1>
             </div>
         </div>
     );
