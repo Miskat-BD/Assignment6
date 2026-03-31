@@ -6,11 +6,12 @@ Description: DigiTools Platform is a modern web application that offers a collec
 <br>
 
 #### Technology Used:
-        1. JavaScript
-        2. ReactJs
-        3. Tailwind
-        4. Github
-        5. Netlify (for deploy)
+        1. ReactJS
+        2. Tailwind CSS, DaisyUI
+        3. JavaScript (ES6+)
+        4. React-Toastify (NPM Package)
+        5. JSON (for product data)
+        6. Netlify (for deploy)
 
 #### Features of this project:
         1. Beautiful and responsive pricing cards UI
