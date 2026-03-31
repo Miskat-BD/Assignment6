@@ -11,3 +11,8 @@ Description: DigiTools Platform is a modern web application that offers a collec
         3. Tailwind
         4. Github
         5. Netlify (for deploy)
+
+#### Features of this project:
+        1. Beautiful and responsive pricing cards UI
+        2. Dynamic product tags(popular, new, best seller)
+        3. Fast and interactive UX
