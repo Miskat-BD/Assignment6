@@ -1,10 +1,10 @@
 import React from 'react';
-const CartCards = ({item}) => {
+const CartCards = ({item, deleteItem}) => {
     return (
         <div>
             <div className=" rounded-2xl">
                 
-                <div className="border rounded-3xl p-6 flex justify-between my-5">
+                <div className="border border-gray-300 rounded-3xl p-6 flex justify-between items-center my-5">
                     <div className="flex items-center gap-2.5">
                         <img src={item.icon} alt="" className='pr-2.5' />
                         <div className=" ">
@@ -13,7 +13,7 @@ const CartCards = ({item}) => {
                         </div>
                     </div>
                     <div className="">
-                        <button className='btn rounded-3xl text-red-600'>Remove</button>
+                        <button onClick={()=> deleteItem(item)} className='btn rounded-3xl text-red-600'>Remove</button>
                     </div>
                 </div>
             </div>

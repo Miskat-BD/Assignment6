@@ -10,7 +10,7 @@ const Product = ({ product, handleCart }) => {
     }
     return (
         <div className=''>
-            <div className="card mx-w-[375px] bg-base-100 shadow-sm border border-gray-200">
+            <div className="card mx-w-[375px] bg-base-100 shadow-sm border border-gray-200 hover:-translate-y-2">
                 <div className="card-body">
                     <div className="flex justify-between mb-5 mt-3">
                         <div className="pt-4">
@@ -40,7 +40,7 @@ const Product = ({ product, handleCart }) => {
 
                     </ul>
                     <div className="mt-auto">
-                        <button onClick={handleOrderBtn} disabled={isAdded} className={`btn bg-linear-to-l ${isAdded ? 'from-green-400 to-green-600' : 'from-[#9514FA] to-[#4F39F6]'} rounded-full btn-block text-white font-bold`}>{isAdded ? "Added to Cart!" : "Buy Now"}</button>
+                        <button onClick={handleOrderBtn} disabled={isAdded} className={`btn bg-linear-to-l  ${isAdded ? 'from-green-400 to-green-600' : 'from-[#9514FA] to-[#4F39F6]'} rounded-full btn-block text-white font-bold`}>{isAdded ? "Added to Cart!" : "Buy Now"}</button>
                     </div>
                 </div>
             </div>

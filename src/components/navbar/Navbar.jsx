@@ -1,8 +1,9 @@
 import React from 'react';
 import { BiCart } from 'react-icons/bi';
 import { FiShoppingCart } from 'react-icons/fi';
+import cartImg from '../../assets/products/shopping-cart.png'
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
         <div className='sticky top-0 z-10 bg-white'>
             <div className="container mx-auto max-sm:hidden ">
@@ -21,8 +22,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex text-center justify-end md:flex gap-5 items-center font-semibold">
-                        <div className="">
-                            <FiShoppingCart />
+                        <div className="indicator">
+                            {cart.length > 0 ? <span className={`indicator-item bg-red-500 rounded-full px-2 text-[10px] ${cart.length < 0 ? 'hidden' : null}`}>{cart.length}</span> : null}
+                            <img src={cartImg} alt="" />
                         </div>
                         <h3>Login</h3>
                         <button className='text-white btn bg-linear-to-l rounded-full from-[#9514FA] to-[#4F39F6] '>Get Started</button>
@@ -31,7 +33,7 @@ const Navbar = () => {
             </div>
 
             {/* For Mobile */}
-            <div className="sm:hidden">
+            <div className="sm:hidden sticky top-0 z-10 bg-white">
                 <div className="navbar bg-base-100">
                     <div className="navbar-start w-10 mr-5">
                         <div className="dropdown">
@@ -55,7 +57,10 @@ const Navbar = () => {
                     </div>
 
                     <div className="navbar-end flex gap-2 items-center font-semibold ml-8">
-                        <FiShoppingCart size={20} className="cursor-pointer" />
+                       <div className="indicator">
+                            {cart.length > 0 ? <span className={`indicator-item bg-red-500 rounded-full px-2 text-[10px] ${cart.length < 0 ? 'hidden' : null}`}>{cart.length}</span> : null}
+                            <img src={cartImg} alt="" />
+                        </div>
                         <h3 className='text-[12px]'>Login</h3>
                         <button className='btn btn-sm bg-linear-to-l rounded-full from-[#9514FA] to-[#4F39F6] text-[12px] text-white'>Get Started</button>
                     </div>
